@@ -1,6 +1,6 @@
 ## Information
 
-These are the innards of my portfolio, it is hosted on github and processed by Jekyll.
+These are the internals of my portfolio; the files that contain all of my thoughts, and process. It is hosted on github and processed by Jekyll.
 
 Feel free to look around, and if motivated to, correct any errors I may have missed, in my doubtless haste,
 
