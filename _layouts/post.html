@@ -1,0 +1,38 @@
+{% include head.html %}
+<h2 class="page-title">{{ page.title }}</h2>
+<p class="page-date">{% assign d = page.date | date: "%-d"  %}
+{{ page.date | date: "%B" }}
+{% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+    {% when '2' or '22' %}{{ d }}<sup>nd</sup>
+    {% when '3' or '23' %}{{ d }}<sup>rd</sup>
+    {% else %}{{ d }}<sup>th</sup>
+  {% endcase %},
+{{ page.date | date: "%Y" }}</p>
+</div>
+<div class="post">
+{{ content }}
+</div>
+<h3>further reading</h3>
+<ul class="posts">  
+	{% for post in site.posts limit:5 %}  
+    <li>  
+        <a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">  
+            <p>{{ post.title }}
+        </a> – {% assign d = post.date | date: "%-d"  %}
+{{ post.date | date: "%B" }}
+{% case d %}
+        {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+        {% when '2' or '22' %}{{ d }}<sup>nd</sup>
+        {% when '3' or '23' %}{{ d }}<sup>rd</sup>
+        {% else %}{{ d }}<sup>th</sup>
+  {% endcase %},
+{{ post.date | date: "%Y" }}</p>  
+	{% endfor %}  
+	</li>
+    <li>
+        <a href="/archive">Archive
+        </a>
+    </li>
+</ul>
+{% include foot.html %}
