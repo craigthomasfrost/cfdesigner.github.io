@@ -1,6 +1,6 @@
 ---
 layout: work
-title: A study of the professional
+title: A Study of the Professional
 ---
 ### Note from the author
 
