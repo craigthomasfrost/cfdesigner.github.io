@@ -38,6 +38,24 @@ The icon we will focus on is the 'search' icon. When this is clicked, rather tha
 
 We can expand on the notion of modular design by extending it to animated and interactive elements. An articles introduction, for example, could always fill one-hundred percent of the screen height, with title, author(s), date, and abstract featured, in order to allow the researcher to properly assess whether time should be spent reading it, rather than another, potentially more relevant piece. Motion is also becoming a staple in engaging design for the web, and so on this section, titles and extra information could be faded in using CSS keyframes and transforms, rather than objects appearing bluntly. All of this creates an ambience for the researcher, something incredibly important when reading, particularly long-form.
 
+***
+
+Something that begins to play more of a role as the product grows is flow and interaction: it must be easy to interact with all elements of the product, and it must be obvious what the outcome of those interactions will be. The user should not be forced to go back on themselves, but rather transition seamlessly from one section to another, no matter where they may be at any given time.
+
+From the very first page, it should be clear what is expected from the researcher, and the tools to complete those expectations should be present. For example:
+
+If we aim to cater to those with a particular query, a search box should be immediately available, so that results can be gathered, and articles accessed, as quickly as possible. For the lesser directed, but equally curious, it may make sense to have suggested searches below the text field, or perhaps popular searches, though user generated content may not provide the most valuable results.
+
+Moving on, it's important to ensure all available categories are listed, should the researcher not feel comfortable with searching for terms directly at this point. Categories, listed alphabetically, ensure the researcher is aware of all available options, and could prompt a discovery of content that may not have happened when searching directly. 
+
+In the event that the researcher does not have a particular query nor the motivation to navigate papers within a category, the next section will display 'wildcards': a visual representation, and link to, a random paper from a chosen category. This allows the researcher to dictate from which field they will read, whilst negating the requirement, at this point, to select a particular paper. This enables the researcher to start reading and exploring, from which point further exploration is less intimidating. 
+
+The aforementioned, though, focuses on the flow *within* a page, but not *from* page to page, which is the greater challenge. This would require pre-anticipating how the researcher may progress through the product, and must ensure engagement and direction at every stage. 
+
+
+
+
+
 
 
 

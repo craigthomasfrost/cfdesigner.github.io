@@ -10,5 +10,9 @@ This essay is the ongoing line of enquiry being followed as a result of reading 
 
 The words that follow shall discuss the authors opinion of 'the professional': what it means, in practice, to be a professional, and how one might portray their personal or brand image as such. These are the opinions of the author, and not intended to be, in any way, instructional. That said, should anything be of great interest, feel more than welcome to reach out and [discuss it](mailto:c.frostwr1@gmail.com).
 
+### Branding
+
+A personal brand
+
 
 
