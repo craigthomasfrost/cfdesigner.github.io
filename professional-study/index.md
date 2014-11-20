@@ -12,7 +12,15 @@ The words that follow shall discuss the authors opinion of 'the professional': w
 
 ### Branding
 
-A personal brand
+A personal brand—such as a logo—is something I have stayed away from thus far. Not because I disagree with the idea, as such, simply that I feel as though it may be difficult to distill my practice into a mark, and that to struggle to do so would be disingenuous. As part of this study, I will attempt to synthesise the facets of my professional practice into something resembling a brand, though I daresay I'll be unlikely to utilise it.
+
+This exercise will help me to define what is important to me, as a practitioner, and how I can further contribute to the canon of design, and also learn from it, in understanding how my peers go about creating something so personal. 
+
+### Web Presence
+
+My home on the web has, as a result of this study, been recently deconstructed, sorted, and re-assembled, this time though into something that reflects my values and beliefs as a practitioner. 
+
+
 
 
 
