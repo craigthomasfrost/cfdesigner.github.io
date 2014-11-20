@@ -44,7 +44,7 @@ In the interest and pursuit of quality over quantity, I only showcase one projec
 
 ### contact
 
-I'm available via phone Monday through Friday 8 a.m to 6 p.m.—outside of these times I am available via text message or email. Exceptions are made should your query be particularly urgent, or should our time-zones vary wildly. 
+I'm available via phone Monday through Friday 8 a.m. to 6 p.m.—outside of these times I am available via text message or email. Exceptions are made should your query be particularly urgent, or should our time-zones vary wildly. 
 
 <ul>
     <li><p><a href="mailto:c.frostwr1@gmail.com">c.frostwr1@gmail.com</a></p>
