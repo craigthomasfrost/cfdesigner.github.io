@@ -34,7 +34,7 @@ Some essays, most blog posts, I write for you, the reader, but mostly for myself
 In an effort to design in the open, and better contribute to the canon of design, this area is being restructured. The product currently in production is called *Coach*, and process will begin to appear here shortly. Useful tools that can be open-sourced will also appear here.
 
 <ul>
-    <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—open-sourced <em>Sketch</em> user-flow symbols.</p>
+    <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—Open-sourced <em>Sketch</em> user-flow symbols.</p>
     </li>
 </ul>
 
