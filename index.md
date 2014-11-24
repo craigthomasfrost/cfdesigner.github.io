@@ -31,14 +31,10 @@ Some essays, most blog posts, I write for you, the reader, but mostly for myself
 
 ### work
 
-In the interest and pursuit of quality over quantity, I only showcase one project at a time. This one happens to be a work in progress, so you can follow my process as I design. This product is called *Coach*.
+In an effort to design in the open, and better contribute to the canon of design, this area is being restructured. The product currently in production is called *Coach*, and process will begin to appear here shortly. Useful tools that can be open-sourced will also appear here.
 
 <ul>
-    <li><p><a href="/coach/product">Product</a></p>
-    </li>
-    <li><p><a href="/coach/illustration">Illustration</a></p>
-    </li>
-    <li><p><a href="">Documentation</a></p>
+    <li><p><a href="http://craigfro.st/flow/">*Flow*—open-sourced *Sketch* user-flow symbols.</a></p>
     </li>
 </ul>
 
