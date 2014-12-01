@@ -1,5 +1,5 @@
 html, :root {
-    font: 15px/22px 'livory', serif;
+    font: 15px/22px 'freight-text-pro', serif;
     @media (min-width: 500px) {
         font-size: 17px;
         line-height: 25px;
@@ -53,11 +53,12 @@ h1 {
 	}
 
 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
+    font-family: 'freight-display-pro';
 	margin-bottom: 4rem;
     font-weight: 700;
     text-align: center;
-    Line-height:2rem;
+    Line-height:3.8rem;
 	}
 
 h3 {
