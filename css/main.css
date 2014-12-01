@@ -99,6 +99,15 @@ sup {
   sup a, sup a:visited {
     color: #0093ff; }
 
+.handwritten {
+  font-family: 'federico-web';
+  font-size: 2.5rem;
+  line-height: 4rem; }
+  @media (min-width: 1200px) {
+    .handwritten {
+      width: 150%;
+      margin-left: -25%; } }
+
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
