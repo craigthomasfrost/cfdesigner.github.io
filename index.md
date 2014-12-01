@@ -47,5 +47,3 @@ I'm available via phone Monday through Friday 8 a.m. to 6 p.m.—outside of thes
     </li>
     <li><p><a href="tel:07534189501">07534189501</a></p>
 </ul>
-
-Why is my site so simple? Good question, [*satisfactory answer*](/an-explanation).
