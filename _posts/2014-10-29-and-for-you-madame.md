@@ -1,6 +1,6 @@
 ---
 layout: post
-title: And for you, Madam?
+title: And for You, Madam?
 ---
 
 Allow me to tell you a story about a fictional friend of mine—let's call her Alice—who's had a tough day at work. She's a product manager for a tech startup where, before her arrival, every new idea was taken on board and executed. Now she's been left with figuring out how exactly they're going to bring focus to the product. She'd written down hundreds of ideas throughout the day, but not one of them seemed to fit. As she'd already worked hours after closing, Alice decided to head home, and thought she might grab some dinner at a restaurant on the way, and this, is how it went:
@@ -51,6 +51,6 @@ A minute or two after finishing, the waiter cleared the table, and offered her a
 
 Alice then pulled a pen from her bag, slid a napkin toward herself, and wrote something down:
 
-*Invite them in, but don't be flashy; tend to their needs, but don't irritate; give them choices, but not too many.*
+{% include aside.html class="handwritten" text="Invite them in, but don't be flashy; tend to their needs, but don't irritate; give them choices, but not too many." %}
 
 The next day at work, was better.
