@@ -45,12 +45,16 @@ h1 {
   margin-bottom: 4rem; }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'freight-display-pro';
   margin-bottom: 4rem;
   font-weight: 700;
   text-align: center;
-  Line-height: 3.8rem; }
+  Line-height: 2.8rem; }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 4rem;
+      line-height: 3.8rem; } }
 
 h3 {
   font-size: 0.9rem;
