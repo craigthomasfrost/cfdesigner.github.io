@@ -3,7 +3,7 @@ layout: post
 title: An Explanation
 ---
 
-{% include image.html url="/assets/images/vitsoe-606-img.jpg" description="Vitsœ 606 Universal Shelving System" %}
+{% include image.html url="/assets/images/vitsoe-606-img.jpg" description="Vitsœ 606 Universal Shelving System" class="wide" %}
 
 For a number of years, I constantly re-designed my home on the internet, tweaking and nudging pixels around the screen, adding grids, styling links. Over a number of days, I *un-*designed it.[^1]
 
