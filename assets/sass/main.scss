@@ -134,6 +134,10 @@ sup {
     font-family: 'federico-web';
     font-size: 2.5rem;
     line-height: 4rem;
+    @media (min-width: 1200px) {
+        width: 150%;
+        margin-left: -25%;
+    }  
 }
     
 
@@ -215,6 +219,8 @@ img, figure {
 
 @media (min-width: 1200px) {
     .two-column {
+        width: 150%;
+        margin-left: -25%;
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
