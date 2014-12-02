@@ -152,6 +152,10 @@ code {
 img, figure {
   width: 100%;
   box-sizing: border-box; }
+  @media (min-width: 1200px) {
+    img, figure {
+      width: 150%;
+      margin-left: -25%; } }
 
 .img-left {
   width: 100%;
