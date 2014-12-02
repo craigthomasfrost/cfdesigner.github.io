@@ -57,12 +57,22 @@ h2 {
       line-height: 3.8rem; } }
 
 h3 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #707070;
+  font-size: 1.2rem;
+  font-family: 'freight-sans-pro', sans-serif;
   margin-top: 4rem;
   letter-spacing: 2px;
   letter-spacing: 2px; }
+
+.large {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+
+wide {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    wide {
+      width: 150%;
+      margin-left: -25%; } }
 
 .page-title {
   margin-bottom: 0; }
@@ -103,10 +113,6 @@ sup {
   font-family: 'federico-web';
   font-size: 2.5rem;
   line-height: 4rem; }
-  @media (min-width: 1200px) {
-    .handwritten {
-      width: 150%;
-      margin-left: -25%; } }
 
 hr {
   margin-top: 2rem;
@@ -146,10 +152,6 @@ code {
 img, figure {
   width: 100%;
   box-sizing: border-box; }
-  @media (min-width: 1200px) {
-    img, figure {
-      width: 150%;
-      margin-left: -25%; } }
 
 .img-left {
   width: 100%;
@@ -176,8 +178,6 @@ img, figure {
 
 @media (min-width: 1200px) {
   .two-column {
-    width: 150%;
-    margin-left: -25%;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
