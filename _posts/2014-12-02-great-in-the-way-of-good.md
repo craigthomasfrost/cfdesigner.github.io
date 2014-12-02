@@ -3,7 +3,7 @@ layout: post
 title: Great in the Way of Good
 ---
 
-There’s a moment, every evening, when me and my future wife will sit down and share stories from the parts of our day that the other wasn’t present in, and the six words that comprise the title of this post are ones that have remained on my mind, to such an extent, that I feel compelled to share them, and what they mean to me. 
+There’s a moment, every evening, when my future wife and I will sit down and share stories from the parts of our day that the other wasn’t present in, and the six words that comprise the title of this post are ones that have remained on my mind, to such an extent, that I feel compelled to share them, and what they mean to me. 
 
 The context in which they were originally used carried, unfortunately, negative connotations. “We’re letting Great get in the way of Good”, it had been overheard, but with the unspoken subtext of ‘good enough’. In this scenario, ‘Great’ was something achievable, but ‘good enough’ was the furthest the speaker had intended on performing.
 
