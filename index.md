@@ -29,7 +29,7 @@ Some essays, most blog posts, I write for you, the reader, but mostly for myself
     </li>
 </ul>
 
-### work
+### Work
 
 In an effort to design in the open, and better contribute to the canon of design, this area is being restructured. The product currently in production is called *Coach*, and process will begin to appear here shortly. Useful tools that can be open-sourced will also appear here.
 
@@ -38,7 +38,7 @@ In an effort to design in the open, and better contribute to the canon of design
     </li>
 </ul>
 
-### contact
+### Contact
 
 I'm available via phone Monday through Friday 8 a.m. to 6 p.m.—outside of these times I am available via text message or email. Exceptions are made should your query be particularly urgent, or should our time-zones vary wildly. 
 
