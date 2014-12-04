@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% include image.html src="/assets/images/portrait.jpg" class="portrait" %}
+
 My name's **Craig Frost**, and I'm a **designer** who [*designs in the open*](/2014/10/24/designing-in-the-open/) and [*writes about practice*](/archive/). If you'd like to talk to me about a project or speaking engagement, you can contact me [*here*](mailto:c.frostwr1@gmail.com).
 
 ### Writing
