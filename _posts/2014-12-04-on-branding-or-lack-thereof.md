@@ -15,7 +15,7 @@ Creating a brand for my practice; constructing an image that reflects my beliefs
 
 The majority of the designers I have an affinity with also happen to be fantastic writers, and the ways in which I identify  them are far more nuanced than a mark. It should be noted that the majority, yet again, do not have marks—or at least, no longer have them, presumably having reached a similar conclusion to mine.
 
-Those identifications are as subtle as their tone, or use of language; their advocating or rejection of the oxford comma; their typeface and layout choices, and how those inform my reading.
+Those identifications are as subtle as their tone, or use of language; their advocating or rejection of the Oxford comma; their typeface and layout choices, and how those inform my reading.
 
 It could be argued, then, that a brand is much less a specific asset, such as a mark or logotype, than a nuanced unique identifier. More akin to recognising a loved ones voice than their face. The voice can affect us in ways the face cannot, and can do so regardless of proximity.
 
