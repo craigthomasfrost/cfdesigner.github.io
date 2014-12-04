@@ -75,7 +75,9 @@ wide {
       margin-left: -25%; } }
 
 .portrait {
-  max-width: 100%; }
+  max-width: 100%;
+  margin-left: 0;
+  margin-bottom: 2rem; }
 
 .page-title {
   margin-bottom: 0; }
