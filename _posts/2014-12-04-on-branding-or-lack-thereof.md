@@ -27,7 +27,7 @@ Imagine, for a moment, that you’ve come across a small box in the family attic
 
 Once finished looking through the photographs, you reach for the cassette. After dusting it off, finding a pen to wind the loose tape back in, and, more than likely, trying to find a cassette player in that same attic, you snap the drawer shut and press play.
 
-A few crackles, first, as the cassette player attempts valiantly  to act with youth, and then the voices: the small giggle of those embarrassed to record their voice because they think they sound a little odd on recordings; the warm, soft tones of those enjoying what appears to be a party, the emotion in every inflection, and the way everyone spoke, back then.
+A few crackles, first, as the cassette player attempts valiantly  to act with youth, and then the voices: the small giggle of those embarrassed to record their voice because they think they sound a little odd on recordings; the warm, soft tones of those enjoying what appears to be a party; the emotion in every inflection, and the way everyone spoke, back then.
 
 You close your eyes, pop some headphones in, and it’s as though you’re right there with them: at the same party, in the same room. You remember the photographs and how they looked: that crooked smile matches that laugh, those warm wishes match the kind eyes.
 
