@@ -19,7 +19,7 @@
     <li>  
         <a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">  
             <p>{{ post.title }}
-        </a> – {% assign d = post.date | date: "%-d"  %}
+        </a> – <em>{% assign d = post.date | date: "%-d"  %}
 {{ post.date | date: "%B" }}
 {% case d %}
         {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
@@ -27,7 +27,7 @@
         {% when '3' or '23' %}{{ d }}<sup>rd</sup>
         {% else %}{{ d }}<sup>th</sup>
   {% endcase %},
-{{ post.date | date: "%Y" }}</p>  
+{{ post.date | date: "%Y" }}</em></p>  
 	{% endfor %}  
 	</li>
 </ul>
