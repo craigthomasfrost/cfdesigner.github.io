@@ -38,6 +38,8 @@ In an effort to design in the open, and better contribute to the canon of design
 <ul>
     <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—Open-sourced <em>Sketch</em> user-flow symbols.</p>
     </li>
+    <li><p><a href="http://craigfro.st/designerly-dotfiles/"><em>Designerly Dotfiles</em></a>—Launching soon.</p>
+    </li>
 </ul>
 
 ### Contact
