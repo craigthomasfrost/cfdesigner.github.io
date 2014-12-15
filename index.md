@@ -7,8 +7,6 @@ My name's **Craig Frost**, and I'm a **Designer** who [*designs in the open*](/2
 
 ### Writing
 
-Some essays, most blog posts, I write for you, the reader, but mostly for myself, as a vehicle for learning. All are published here to document my thoughts, emotions and ideas in relation to design. There's a comfort in writing them down.
-
 <ul class="posts">  
 	{% for post in site.posts limit:5 %}  
     <li>  
@@ -31,9 +29,7 @@ Some essays, most blog posts, I write for you, the reader, but mostly for myself
     </li>
 </ul>
 
-### Work
-
-In an effort to design in the open, and better contribute to the canon of design, this area is being restructured. The product currently in production is called *Coach*, and process will begin to appear here shortly. Useful tools that can be open-sourced will also appear here.
+### Open-source
 
 <ul>
     <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—Open-sourced <em>Sketch</em> user-flow symbols.</p>
@@ -44,7 +40,7 @@ In an effort to design in the open, and better contribute to the canon of design
 
 ### Contact
 
-I'm available via phone Monday through Friday 8 a.m. to 6 p.m.—outside of these times I am available via text message or email. Exceptions are made should your query be particularly urgent, or should our time-zones vary wildly. 
+By phone Monday through Friday, 8 a.m. to 6 p.m.—outside of these times I am available via text message or email.
 
 <ul>
     <li><p><a href="mailto:c.frostwr1@gmail.com">c.frostwr1@gmail.com</a></p>
