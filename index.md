@@ -32,7 +32,7 @@ My name's **Craig Frost**, and I'm a **Designer** who [*designs in the open*](/2
 ### Open-source
 
 <ul>
-    <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—Open-sourced <em>Sketch</em> user-flow symbols.</p>
+    <li><p><a href="http://craigfro.st/flow/"><em>Flow</em></a>—<em>Sketch</em> user-flow symbols.</p>
     </li>
     <li><p><a href="http://designerlydotfil.es"><em>Designerly Dotfiles</em></a>—Launching soon.</p>
     </li>
