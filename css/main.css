@@ -23,7 +23,6 @@ body {
   -moz-font-feature-settings: "liga=1, dlig=1";
   -moz-font-feature-settings: "liga", "dlig";
   -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
@@ -45,7 +44,7 @@ h1 {
   margin-bottom: 4rem; }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'freight-display-pro';
   margin-bottom: 4rem;
   font-weight: 700;
@@ -53,7 +52,7 @@ h2 {
   Line-height: 2.8rem; }
   @media (min-width: 1200px) {
     h2 {
-      font-size: 4rem;
+      font-size: 2.5rem;
       line-height: 3.8rem; } }
 
 h3 {
@@ -202,9 +201,8 @@ img, figure {
     word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto; }
     .two-column p {
       margin-top: 0;
       margin-bottom: 0; } }
-
-/*# sourceMappingURL=main.css.map */
