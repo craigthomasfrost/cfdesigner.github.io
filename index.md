@@ -19,7 +19,7 @@ My name's **Craig Frost**, and I'm a **Designer** who [*designs in the open*](/2
   {% when '2' or '22' %}{{ d }}<sup>nd</sup>
   {% when '3' or '23' %}{{ d }}<sup>rd</sup>
   {% else %}{{ d }}<sup>th</sup>
-  {% endcase %},
+  {% endcase %}
   {{ post.date | date: "%Y" }}</em></p>
     </li>
 	{% endfor %}  
