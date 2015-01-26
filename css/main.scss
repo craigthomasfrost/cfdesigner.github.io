@@ -79,9 +79,17 @@ ol, ul {
     margin-bottom: 1rem;
 }
 
-.ul--social,
-.footer--primary {
+.ul--social {
     margin-top: 4rem;
+}
+
+.ul--contact,
+.footer--primary {
+    margin-top: 2rem;
+}
+
+.colophon {
+    color: silver;
 }
 
 ::selection {
