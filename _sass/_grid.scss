@@ -1,0 +1,88 @@
+// Ingrid - http://craigfro.st
+// ======   ==================
+//
+// To use:
+//
+// Container class = "grid", column class == "col" + "col--x-of-y"
+//
+// For fluid columns, "fluid-col" + "col--x-of-y"
+//
+// Helper classes can be used, for example: 
+//
+// "col" + "col--quart" or "fluid-col" + "col--quart"
+//
+// Grids can be nested, column classes can be used together for complex layouts
+//
+// Edit variables to customize, create new helpers as needed
+//
+$columns: 12;
+
+$gutter: 25px;
+
+$breakpoint: 700px;
+
+$helpers: (quart: 25, third: 33.3, half: 50, two-thirds: 66.6, three-quart: 75);
+
+.grid {
+    list-style: none;
+    margin-left: -$gutter;
+    
+    .col,
+    .fluid-col {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        padding-left: $gutter;
+        margin-right: -.25em;
+        vertical-align: top;
+    }
+      
+    @for $i from 1 through $columns {
+        > .col--#{$i}-of-#{$columns} {
+            width: percentage($i/$columns);
+        }
+        > .col--push-#{$i}-of-#{$columns} {
+            margin-left: percentage($i/$columns);
+        }
+        > .col--pull-#{$i}-of-#{$columns} {
+            margin-left: -(percentage($i/$columns));
+        }
+    }
+    
+    @each $helper, $number in $helpers {
+        > .col--#{$helper} {
+            width: percentage($number/100);
+        }
+        > .col--push-#{$helper} {
+            width: percentage($number/100);
+        }
+        > .col--pull-#{$helper} {
+            width: percentage($number/100);
+        }
+    }
+
+    .col--is-centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .col--middle {
+        vertical-align: middle;
+    }
+    
+    .col--bottom {
+        vertical-align: bottom;
+    }
+}
+
+@media (max-width: $breakpoint) {
+    .grid .col {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+// End
