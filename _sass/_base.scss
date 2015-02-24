@@ -41,5 +41,6 @@ a:hover {
 }
 
 ol, ul {
-    list-style-type: none;
+    list-style: bulleted;
+    list-style-position: inside;
 }

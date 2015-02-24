@@ -4,10 +4,17 @@
 
 .logo {
     color: #000;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .personal-links {
     @extend %island--small;
+    list-style: none;
     a {
         text-decoration: none;
         color: gray;
@@ -42,6 +49,26 @@
     font-size: 1rem;
     color: gray;
     margin-bottom: .5rem;
+}
+
+.page-content {
+    @extend %spacing--large;
+}
+
+.print {
+    cursor: pointer;
+}
+
+@media print {
+    html, :root {
+        font-size: $base-font-size * .7;
+    }
+    .wrap--small {
+        max-width: 18cm;
+    }
+    .no-print {
+        display: none;
+    }
 }
 
 ::selection {
