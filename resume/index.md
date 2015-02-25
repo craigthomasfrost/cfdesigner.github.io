@@ -24,6 +24,14 @@ layout: page
 
 - For more examples, see [craigfro.st](http://craigfro.st).
 
+<h2 class="gamma">Skills</h2>
+
+Design, Front-end Development, Illustration
+
+<h2 class="gamma">Languages</h2>
+
+HTML, CSS, Sass, Javascript, jQuery, Git
+
 <a class="js-print print no-print">Click to print or save PDF</a>
 
 
