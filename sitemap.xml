@@ -1,28 +1,28 @@
 ---
-layout: null
+layout: nil
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
+      <loc>http://craigfro.st{{ site.baseurl }}{{ post.url }}</loc>
+      <priority>0.5</priority>
     </url>
   {% endfor %}
   {% for page in site.pages %}
-    {% if page.sitemap != null and page.sitemap != empty %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        <priority>{{ page.sitemap.priority }}</priority>
-       </url>
-    {% endif %}
+    <url>
+      <loc>http://craigfro.st{{ site.baseurl }}{{ page.url }}</loc>
+      {% if page.url == "/index.html" %}
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+      {% else %}
+        {% if page.url contains "index.html" %}
+          <priority>0.1</priority>
+        {% else %}
+          <priority>0.5</priority>
+        {% endif %}
+      {% endif %}
+    </url>
   {% endfor %}
 </urlset>
