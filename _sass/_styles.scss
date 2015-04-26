@@ -24,7 +24,20 @@
 
 .portfolio {
     @extend %island--large;
-    background: #f6f8f8;
+    margin: 5rem 0;
+    &::after {
+        content: "";
+        height: 110%;
+        width: 200%;
+        margin-left: -50%;
+        background: rgb(113, 255, 169);
+        position: absolute;
+        top: -5%;
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        transform: rotate(2deg);
+        z-index: -1;
+    }
 }
 
 .portfolio-items {
