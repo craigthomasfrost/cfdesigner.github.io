@@ -25,6 +25,7 @@
 .portfolio {
     @extend %island--large;
     margin: 5rem 0;
+    overflow: hidden;
     &::after {
         content: "";
         height: 110%;
