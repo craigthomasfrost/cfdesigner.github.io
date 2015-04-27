@@ -29,32 +29,18 @@
 .portfolio {
     @extend %island--large;
     margin: 5rem 0;
-    color: #ffffff;
     &::after {
         content: "";
         height: 110%;
         width: 200%;
         margin-left: -50%;
-        background: #3887d6;
+        background: #f7f7f7;
         position: absolute;
         top: -5%;
         -webkit-transform: rotate(2deg);
         -moz-transform: rotate(2deg);
         transform: rotate(2deg);
         z-index: -1;
-    }
-    &::before {
-        content: "";
-        height: 110%;
-        width: 200%;
-        margin-left: -50%;
-        background: #3176bc;
-        position: absolute;
-        top: -5%;
-        -webkit-transform: rotate(-3deg);
-        -moz-transform: rotate(-3deg);
-        transform: rotate(-3deg);
-        z-index: -2;
     }
 }
 
