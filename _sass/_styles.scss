@@ -31,7 +31,7 @@
 .introduction {
     @extend %island--medium;
     p {
-        color: #dddddd;
+        color: #b2b2b2;
         @media (max-width: $breakpoint) {
         font-size: 1.4rem;
     }
@@ -81,22 +81,8 @@
     }
 }
 
-.sub-title {
-    font-size: 1rem;
-    color: gray;
-    margin-bottom: .5rem;
-}
-
 .page-content {
     @extend %spacing--large;
-}
-
-.print {
-    cursor: pointer;
-}
-
-.active {
-    color: $accent;
 }
 
 ::selection {
