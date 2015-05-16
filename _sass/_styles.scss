@@ -48,6 +48,7 @@
         }
         a {
             border-bottom: none;
+            padding-right: 100px;
         }
     }
     p {
@@ -58,6 +59,7 @@
 
 .date {
     position: absolute;
+    top: .5rem;
     right: 0;
     color: #dddddd;
 }
