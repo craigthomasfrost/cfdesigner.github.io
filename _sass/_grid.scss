@@ -21,7 +21,7 @@ $gutter: 25px;
 
 $breakpoint: 700px;
 
-$helpers: (quart: 25, third: 33.3, half: 50, two-thirds: 66.6, three-quart: 75);
+$helpers: (quart: 25, third: 33.3, half: 50, two-thirds: 66.6, three-quart: 75, post: 55);
 
 .grid {
     list-style: none;
@@ -37,28 +37,16 @@ $helpers: (quart: 25, third: 33.3, half: 50, two-thirds: 66.6, three-quart: 75);
         margin-right: -.25em;
         vertical-align: top;
     }
-      
-    @for $i from 1 through $columns {
-        > .col--#{$i}-of-#{$columns} {
-            width: percentage($i/$columns);
-        }
-        > .col--push-#{$i}-of-#{$columns} {
-            margin-left: percentage($i/$columns);
-        }
-        > .col--pull-#{$i}-of-#{$columns} {
-            margin-left: -(percentage($i/$columns));
-        }
-    }
     
     @each $helper, $number in $helpers {
         > .col--#{$helper} {
             width: percentage($number/100);
         }
         > .col--push-#{$helper} {
-            width: percentage($number/100);
+            margin-left: percentage($number/100);
         }
         > .col--pull-#{$helper} {
-            width: percentage($number/100);
+            margin-left: -percentage($number/100);
         }
     }
 

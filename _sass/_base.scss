@@ -33,11 +33,15 @@ html,
 
 a, a:visited {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid $accent;
+  -webkit-transition: color .4s ease;
+  -moz-transition: color .4s ease;
+  transition: color .4s ease;
 }
 
 a:hover {
-  opacity: 0.7;
+  color: $accent;
 }
 
 ol, ul {

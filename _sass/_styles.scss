@@ -1,66 +1,84 @@
 .primary-header {
-    @extend %island--large;
+    @extend %island--medium;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo,
+.primary-nav {
+    margin-bottom: 0;
 }
 
 .logo {
     color: #000;
     a {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-            opacity: 1;
+        border-bottom: none;
+    }
+    @media (max-width: $breakpoint) {
+        margin-bottom: $base-spacing;
+    }
+}
+
+.primary-nav li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: $base-spacing; 
+    a {
+        border-bottom: none;
+    }
+}
+
+.introduction {
+    @extend %island--medium;
+    p {
+        color: #dddddd;
+        @media (max-width: $breakpoint) {
+        font-size: 1.4rem;
+    }
+    }
+}
+
+.post-list {
+    @extend %island--medium;
+    li {
+        list-style: none;
+        font-size: 1.4rem;
+        padding: .5rem 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid #dddddd;
+        }
+        a {
+            border-bottom: none;
         }
     }
-}
-
-.personal-links {
-    @extend %island--small;
-    list-style: none;
-    a {
-        text-decoration: none;
-        color: gray;
+    p {
+        font-size: 1.4rem;
+        color: #dddddd;
     }
 }
 
-.overflow {
-    overflow: hidden;
+.date {
+    position: absolute;
+    right: 0;
+    color: #dddddd;
 }
 
-.portfolio {
+.post-content {
     @extend %island--large;
-    margin: 5rem 0;
-    &::after {
-        content: "";
-        height: 110%;
-        width: 200%;
-        margin-left: -50%;
-        background: #f7f7f7;
-        position: absolute;
-        top: -5%;
-        -webkit-transform: rotate(2deg);
-        -moz-transform: rotate(2deg);
-        transform: rotate(2deg);
-        z-index: -1;
+    font-family: $post-font;
+    font-size: 1.25rem;
+    h1, h2 {
+        font-weight: 700;
     }
-}
-
-.portfolio-items {
-    margin-bottom: 0;
-}
-
-.portfolio-item {
-    @extend %spacing--small;
-    a {
-        font-weight: $bold;
-    }
-}
-
-.colophon {
-    margin-bottom: 0;
 }
 
 .primary-footer {
     @extend %island--large;
+    font-size: 1.4rem;
+    color: #dddddd;
+    a {
+        border: none;
+    }
 }
 
 .sub-title {
@@ -77,16 +95,8 @@
     cursor: pointer;
 }
 
-@media print {
-    html, :root {
-        font-size: $base-font-size * .7;
-    }
-    .wrap--small {
-        max-width: 18cm;
-    }
-    .no-print {
-        display: none;
-    }
+.active {
+    color: $accent;
 }
 
 ::selection {

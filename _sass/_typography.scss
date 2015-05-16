@@ -1,15 +1,16 @@
 h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
     font-weight: normal;
 }
 
 h1,
 .alpha {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 h2,
 .beta {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 h3,
