@@ -68,6 +68,9 @@
     @extend %island--large;
     font-family: $post-font;
     font-size: 1.25rem;
+    h1 {
+        margin-bottom: 3rem;
+    }
     h1, h2 {
         font-weight: 700;
     }
