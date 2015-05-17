@@ -53,7 +53,7 @@
     }
     p {
         font-size: 1.4rem;
-        color: #dddddd;
+        color: #b2b2b2;
     }
 }
 
@@ -61,7 +61,7 @@
     position: absolute;
     top: .5rem;
     right: 0;
-    color: #dddddd;
+    color: #b2b2b2;
 }
 
 .post-content {
@@ -79,7 +79,7 @@
 .primary-footer {
     @extend %island--large;
     font-size: 1.4rem;
-    color: #dddddd;
+    color: #b2b2b2;
     a {
         border: none;
     }
