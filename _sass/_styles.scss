@@ -86,6 +86,11 @@
     @extend %spacing--large;
 }
 
+blockquote {
+    padding-left: $base-spacing;
+    border-left: 2px solid $accent;
+}
+
 ::selection {
     color: white;
     background: black;
