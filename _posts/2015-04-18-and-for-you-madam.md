@@ -51,6 +51,6 @@ A minute or two after finishing, the waiter cleared the table, and offered her a
 
 Alice then pulled a pen from her bag, slid a napkin toward herself, and wrote something down:
 
-Invite them in, but don't be flashy; tend to their needs, but don't irritate; give them choices, but not too many.
+> Invite them in, but don't be flashy; tend to their needs, but don't irritate; give them choices, but not too many.
 
 The next day at work, was better.
