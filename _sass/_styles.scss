@@ -94,6 +94,11 @@ blockquote {
     border-left: 2px solid $accent;
 }
 
+.eta {
+    color: #b2b2b2;
+    font-family: $primary-font;
+}
+
 ::selection {
     color: white;
     background: black;
