@@ -37,7 +37,8 @@
     }
 }
 
-.post-list {
+.post-list,
+.tweets {
     @extend %island--medium;
     li {
         list-style: none;
