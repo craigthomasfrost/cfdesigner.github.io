@@ -46,7 +46,7 @@ $helpers: (quart: 25, third: 33.3, half: 50, two-thirds: 66.6, three-quart: 75, 
             margin-left: percentage($number/100);
         }
         > .col--pull-#{$helper} {
-            margin-left: -percentage($number/100);
+            margin-left: - percentage($number/100);
         }
     }
 
