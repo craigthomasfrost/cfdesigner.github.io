@@ -22,7 +22,7 @@ html,
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fff;
+    background-color: #f0f0f0;
     @media (max-width: $breakpoint--medium) {
         font-size: $base-font-size * .9;
     }
