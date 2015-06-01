@@ -22,8 +22,12 @@
     display: inline-block;
     font-size: 1.4rem;
     margin-right: $base-spacing; 
+    color: cornflowerblue;
     a {
         border-bottom: none;
+        &:hover {
+            color: darken(cornflowerblue, 8%);
+        }
     }
 }
 
