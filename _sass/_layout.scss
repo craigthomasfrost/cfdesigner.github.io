@@ -5,26 +5,6 @@ pre,table,fieldset,hr, blockquote {
     @extend %spacing--small;
 }
 
-%wrap {
-    @extend %center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.wrap {
-    @extend %wrap;
-}
-
-.wrap--small {
-    @extend %wrap;
-    max-width: 600px;
-}
-
-.wrap--large {
-    @extend %wrap;
-    max-width: 1300px;
-}
-
 %center {
     margin-left: auto;
     margin-right: auto;

@@ -1,26 +1,12 @@
-.primary-header {
-    @extend %island--medium;
-    border-bottom: 1px solid #dddddd;
-}
-
-.logo,
-.primary-nav {
-    margin-bottom: 0;
-}
-
 .logo {
     a {
         border-bottom: none;
-    }
-    @media (max-width: $breakpoint) {
-        margin-bottom: $base-spacing;
     }
 }
 
 .primary-nav li {
     list-style: none;
     display: inline-block;
-    font-size: 1.4rem;
     margin-right: $base-spacing; 
     color: cornflowerblue;
     a {
@@ -33,37 +19,23 @@
 
 .introduction {
     @extend %island--medium;
-    p {
-        color: #b2b2b2;
-        @media (max-width: $breakpoint) {
-        font-size: 1.4rem;
-    }
-    }
 }
 
-.post-list,
-.tweets {
+p,
+ul, ol {
+    max-width: 450px;
+}
+
+.post-list {
     @extend %island--medium;
     li {
         list-style: none;
-        font-size: 1.4rem;
         padding: .5rem 0;
-        &:not(:last-child) {
-            border-bottom: 1px solid #dddddd;
-        }
         a {
             border-bottom: none;
             padding-right: 100px;
         }
     }
-    p {
-        font-size: 1.4rem;
-        color: #b2b2b2;
-    }
-}
-
-.tweets__content {
-    max-width: 500px;
 }
 
 .date {
@@ -74,26 +46,11 @@
 }
 
 .post-content {
-    @extend %island--large;
-    font-family: $post-font;
-    font-size: 1.25rem;
-    h1 {
-        margin-bottom: 3rem;
-    }
-    h1, h2 {
-        font-weight: 700;
-    }
+    @extend %island--medium;
 }
 
 .primary-footer {
-    @extend %island--large;
-    max-width: 1260px;
-    font-size: 1.4rem;
     color: #b2b2b2;
-    border-top: 1px solid #dddddd;
-    a {
-        border: none;
-    }
 }
 
 .page-content {

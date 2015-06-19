@@ -1,8 +1,8 @@
-<footer class="primary-footer wrap--large">
+<footer class="primary-footer">
    
-   <section class="grid">
+   <section>
     
-    <div class="col col--quart col--is-centered">
+    <div>
         
         Copyright Craig Frost 2015
         
@@ -13,27 +13,6 @@
 </footer>
 
 <script src="/scripts/scripts.js"></script>
-
-<script>
-    
-var twitterFetcher=function(){var d=null;return{fetch:function(a,b){d=b;var c=document.createElement("script");c.type="text/javascript";c.src="http://cdn.syndication.twimg.com/widgets/timelines/"+a+"?&lang=en&callback=twitterFetcher.callback&suppress_response_codes=true&rnd="+Math.random();document.getElementsByTagName("head")[0].appendChild(c)},callback:function(a){var b=document.createElement("div");b.innerHTML=a.body;a=b.getElementsByClassName("e-entry-title");d(a)}}}();
-
-twitterFetcher.fetch('599901040008388608', function(tweets){
-  var x = tweets.length;
-  var n = 0;
-  var element = document.getElementById('tweets');
-  var html = '<ul>';
-    if (tweets[n].innerHTML) {
-      html += '<li>' + tweets[n].innerHTML + '</li>';
-    } else {
-      html += '<li>' + tweets[n].textContent + '</li>';
-    }
-    n++;
-  html += '</ul>';
-  element.innerHTML = html;
-});
-
-</script>
 
 </body>
 

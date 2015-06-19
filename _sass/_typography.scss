@@ -1,34 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $primary-font;
-    font-weight: normal;
-}
-
-h1,
-.alpha {
-    font-size: 2.2rem;
-}
-
-h2,
-.beta {
-    font-size: 1.7rem;
-}
-
-h3,
-.gamma {
-    font-size: 1.4rem;
-}
-
-h4,
-.delta {
-    font-size: 1.2rem;
-}
-
-h5,
-.epsilon {
     font-size: 1rem;
-}
-
-h6,
-.zeta {
-    font-size: 1rem;
+    font-weight: 700;
 }
