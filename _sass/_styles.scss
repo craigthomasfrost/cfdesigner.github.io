@@ -8,11 +8,11 @@
     list-style: none;
     display: inline-block;
     margin-right: $base-spacing; 
-    color: cornflowerblue;
+    color: $accent;
     a {
         border-bottom: none;
         &:hover {
-            color: darken(cornflowerblue, 8%);
+            color: darken($accent, 8%);
         }
     }
 }
