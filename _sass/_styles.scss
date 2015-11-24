@@ -1,14 +1,15 @@
 .logo {
+    letter-spacing: 1px;
+    
     a {
         border-bottom: none;
     }
 }
 
-.primary-nav li {
+.nav li {
     list-style: none;
     display: inline-block;
     margin-right: $base-spacing; 
-    color: $accent;
     a {
         border-bottom: none;
         &:hover {
@@ -23,7 +24,7 @@
 
 p,
 ul, ol {
-    max-width: 450px;
+    max-width: 550px;
 }
 
 .post-list {
