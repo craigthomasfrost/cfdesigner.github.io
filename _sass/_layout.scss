@@ -5,34 +5,15 @@ pre,table,fieldset,hr, blockquote {
     @extend %spacing--small;
 }
 
-%center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 %spacing--small {
     margin-bottom: $base-spacing;
-}
-
-%spacing--medium {
-    margin-bottom: $base-spacing * 1.5;
 }
 
 %spacing--large {
     margin-bottom: $base-spacing * 2;
 }
 
-%island--small {
-    padding-top : $base-spacing;
-    padding-bottom: $base-spacing;
-}
-
 %island--medium {
     padding-top : $base-spacing * 1.5;
     padding-bottom: $base-spacing * 1.5;
-}
-
-%island--large {
-    padding-top : $base-spacing * 2.5;
-    padding-bottom: $base-spacing * 2.5;
 }

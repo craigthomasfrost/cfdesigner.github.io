@@ -22,50 +22,8 @@
     @extend %island--medium;
 }
 
-p,
-ul, ol {
-    max-width: 550px;
-}
-
-.post-list {
-    @extend %island--medium;
-    li {
-        list-style: none;
-        padding: .5rem 0;
-        a {
-            border-bottom: none;
-            padding-right: 100px;
-        }
-    }
-}
-
-.date {
-    position: absolute;
-    top: .5rem;
-    right: 0;
-    color: #b2b2b2;
-}
-
-.post-content {
-    @extend %island--medium;
-}
-
-.primary-footer {
-    color: #b2b2b2;
-}
-
 .page-content {
     @extend %spacing--large;
-}
-
-blockquote {
-    padding-left: $base-spacing;
-    border-left: 2px solid $accent;
-}
-
-.eta {
-    color: #b2b2b2;
-    font-family: $primary-font;
 }
 
 ::selection {
