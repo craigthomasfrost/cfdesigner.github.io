@@ -6,7 +6,7 @@
     
     <meta charset="utf-8"/>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     
     <meta name="description" content="Craig Frost is a Designer with a penchant for the simple and the functional.">
     
@@ -16,11 +16,106 @@
     
     <title>Craig Frost, Designer</title>
     
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, :root {
+            font-size: 16px;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .font--serif {
+            font-family: 'PT Serif', Georgia, serif;
+        }
+        
+        .font--sans {
+            font-family: -apple-system, Roboto, Arial, sans-serif;
+        }
+        
+        .c-primary {
+            color: #ffffff;
+        }
+        
+        .c-secondary {
+            color: #9d9c9c;
+        }
+        
+        .fill-page {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .bg-primary {
+            background-color: tomato;
+        }
+        
+        .bg-secondary {
+            background-color: #222222;
+        }
+        
+        .p {
+            padding: 24px;
+        }
+        
+        .constrain {
+            max-width: 800px;
+        }
+        
+        .text--s {
+            font-size: 16px;
+        }
+        
+        .text--m {
+            font-size: 20px;
+        }
+        
+        .t-t--u {
+            text-transform: uppercase;
+        }
+        
+        .l-s--5 {
+            letter-spacing: 5px;
+        }
+        
+        @media (min-width:800px) {
+            
+            .text--m\@l {
+                font-size: 20px;
+            }
+        
+            .text--l\@l {
+                font-size: 32px;
+            }
+            
+            .t-a--c\@l {
+                text-align: center;
+            }
+        
+        }
+        
+        .center__parent {
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+        
+        .center__child {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </style>
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,15 +130,3 @@
 </head>
     
 <body>
-
-    <header class="primary-header">
-           
-           <nav>
-            
-                <h1 class="logo"><a href="/">Craig Frost</a></h1>
-        
-            </nav>
-        
-        </div>
-        
-    </header>
