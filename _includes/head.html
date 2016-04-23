@@ -18,6 +18,8 @@
     
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
     <style>
         *{
             margin: 0;
@@ -26,8 +28,9 @@
         }
         
         html, :root {
+            font-family: -apple-system, Roboto, Arial, sans-serif;
             font-size: 16px;
-            line-height: 1.8;
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
         
@@ -35,130 +38,36 @@
             font-weight: normal;
         }
         
-        .font--serif {
-            font-family: 'PT Serif', Georgia, serif;
+        a,
+        a:visited {
+            color: inherit;
         }
         
-        .font--sans {
-            font-family: -apple-system, Roboto, Arial, sans-serif;
-        }
-        
-        .c-primary {
-            color: #ffffff;
-        }
-        
-        .c-secondary {
-            color: #9d9c9c;
-        }
-        
-        .fill-page {
-            width: 100vw;
-            height: 100vh;
-        }
-        
-        .bg-primary {
-            background-color: tomato;
-        }
-        
-        .bg-secondary {
-            background-color: #222222;
+        .h1 {
+            font-size: 32px;
         }
         
         .p {
             padding: 24px;
         }
         
-        .constrain {
-            max-width: 800px;
+        .m-b {
+            margin-bottom: 24px;
         }
         
-        .text--s {
-            font-size: 16px;
+        .m-r {
+            margin-right: 24px;
         }
         
-        .text--m {
-            font-size: 20px;
-        }
-        
-        .t-t--u {
-            text-transform: uppercase;
-        }
-        
-        .l-s--5 {
-            letter-spacing: 5px;
-        }
-        
-        @media (min-width:800px) {
-            
-            .text--m\@l {
-                font-size: 20px;
-            }
-        
-            .text--l\@l {
-                font-size: 32px;
-            }
-            
-            .t-a--c\@l {
-                text-align: center;
-            }
-        
-        }
-        
-        .center__parent {
-            -webkit-transform-style: preserve-3d;
-            -moz-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-        
-        .center__child {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        
-        .animated {
-            -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-        }
-        
-        @-webkit-keyframes fadeInUp {
-            from {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
-            }
-
-            to {
-                opacity: 1;
-                -webkit-transform: none;
-                transform: none;
+        @media (min-width: 800px) {
+            .p--l\@m {
+                padding: 72px;
             }
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
-            }
-
-            to {
-                opacity: 1;
-                -webkit-transform: none;
-                transform: none;
-            }
+        
+        .m-w--5 {
+            max-width: 500px;
         }
-
-        .fadeInUp {
-            -webkit-animation-name: fadeInUp;
-            animation-name: fadeInUp;
-        }
-    
     </style>
     
     <script>
