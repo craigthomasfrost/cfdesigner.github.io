@@ -34,7 +34,7 @@ Leading digital projects across a diverse portfolio of accounts, my responsibili
 - Running workshops with peers to educate on digital design & strategy
 - Proposing, pitching, and prototyping to get client buy-in and further agency’s digital plans
 
-<h2 class="m-t-4">Designer &amp; Front-end Engineer, January 2012 - April 2016</h2>
+<h2 class="m-t-4">Designer &amp; Front-end Engineer, January 2012 - April 2015</h2>
 
 Independent work for agencies and businesses alongside research, my responsibilities included:
 
