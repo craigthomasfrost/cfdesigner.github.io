@@ -56,4 +56,4 @@ Assisting strategy & comms for sales dept. of large retail org., my responsibili
 
 <h2 class="m-t-4">Contact</h2>
 
-You can reach me via [email](mailto:craig@craigfro.st), [Twitter](https://twitter.com/@_ctfd_uk), and [LinkedIn](https://uk.linkedin.com/in/craigtfrost)
+You can reach me via [Email](mailto:craig@craigfro.st), [Twitter](https://twitter.com/@_ctfd_uk), and [LinkedIn](https://uk.linkedin.com/in/craigtfrost)
