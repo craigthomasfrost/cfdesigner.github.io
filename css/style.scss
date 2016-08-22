@@ -187,22 +187,25 @@ img {
     }
 }
 
-.text-bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+@media (min-width: 700px) {
 
-.text-bg--services {
-    background-image: url(/images/services.svg);
-}
+    .text-bg {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-.text-bg--processes {
-    background-image: url(/images/processes.svg);
-}
+    .text-bg--services {
+        background-image: url(/images/services.svg);
+    }
 
-.text-bg--principles {
-    background-image: url(/images/principles.svg);
+    .text-bg--processes {
+        background-image: url(/images/processes.svg);
+    }
+
+    .text-bg--principles {
+        background-image: url(/images/principles.svg);
+    }   
 }
 
 .pattern-bg {
