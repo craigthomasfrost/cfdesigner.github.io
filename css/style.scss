@@ -16,6 +16,8 @@ html, :root {
     "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 100%;
     line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 p,
