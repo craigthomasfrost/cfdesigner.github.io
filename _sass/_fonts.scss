@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'Akkurat';
+	src: url('typography/Akkurat-normal.otf');
+	src: url('typography/Akkurat-normal.eot');
+	src: url('typography/Akkurat-normal?#iefix') format('embedded-opentype'),
+	     url('typography/Akkurat-normal.woff') format('woff'),
+	     url('typography/Akkurat-normal.ttf')  format('truetype'),
+	     url('typography/Akkurat-normal.svg#svgFontName') format('svg'); 
+    font-weight: normal;
+    font-style: normal;
+}	
+
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url('typography/Akkurat-Bold.otf');
+	src: url('typography/Akkurat-Bold.eot'); 
+	src: url('typography/Akkurat-Bold?#iefix') format('embedded-opentype'),
+	     url('typography/Akkurat-Bold.woff') format('woff'), 
+	     url('typography/Akkurat-Bold.ttf')  format('truetype'), 
+	     url('typography/Akkurat-Bold.svg#svgFontName') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
