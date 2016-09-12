@@ -146,7 +146,7 @@ img {
 
     @media (min-width: $width) {
         @for $i from 0 through 12 {
-            .p-#{$i} {
+            .p-#{$i}\@#{$size} {
                 padding: #{$i}rem;
             }
             .p-t-#{$i}\@#{$size} {
@@ -187,7 +187,7 @@ img {
 
     @media (min-width: $width) {
         @for $i from 0 through 8 {
-            .m-#{$i} {
+            .m-#{$i}\@#{$size} {
                 margin: #{$i}rem;
             }
             .m-t-#{$i}\@#{$size} {
@@ -206,12 +206,14 @@ img {
     }
 }
 
-.bg-light {
-    background-color: lighten(#2b303b, 1.5%);
-    transition: background-color .3s ease-in-out;
-    
-    &:hover {
-        background-color: lighten(#2b303b, 2.5%);
+@media (min-width: 700px) {
+    .bg-light {
+        background-color: lighten(#2b303b, 1.5%);
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+            background-color: lighten(#2b303b, 2.5%);
+        }
     }
 }
 
