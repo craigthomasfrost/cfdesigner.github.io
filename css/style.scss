@@ -3,6 +3,8 @@
 
 @import '_fonts.scss';
 
+$color-primary: #2986ff;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ html, :root {
     "Segoe UI", "Roboto", "Oxygen", 
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #292d38;
+    color: #ffffff;
     font-size: 100%;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
@@ -70,7 +74,7 @@ img {
 }
 
 .h1, .h2, .h3 {
-    color: #0308a2;
+    color: $color-primary;
 }
 
 .h1 {
@@ -109,10 +113,11 @@ img {
 .link {
     padding-bottom: 6px;
     border-bottom: 1px solid;
-}
-
-.link:hover {
-    color: #0006d4;
+    transition: color .3s ease-in-out;
+    
+    &:hover {
+        color: $color-primary;
+    }
 }
 
 .align-right {
@@ -120,6 +125,9 @@ img {
 }
 
 @for $i from 0 through 8 {
+    .p-#{$i} {
+        padding: #{$i}rem;
+    }
     .p-t-#{$i} {
         padding-top: #{$i}rem;
     }
@@ -138,6 +146,9 @@ img {
 
     @media (min-width: $width) {
         @for $i from 0 through 12 {
+            .p-#{$i} {
+                padding: #{$i}rem;
+            }
             .p-t-#{$i}\@#{$size} {
                 padding-top: #{$i}rem;
             }
@@ -155,6 +166,9 @@ img {
 }
 
 @for $i from 0 through 8 {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
     .m-t-#{$i} {
         margin-top: #{$i}rem;
     }
@@ -173,6 +187,9 @@ img {
 
     @media (min-width: $width) {
         @for $i from 0 through 8 {
+            .m-#{$i} {
+                margin: #{$i}rem;
+            }
             .m-t-#{$i}\@#{$size} {
                 margin-top: #{$i}rem;
             }
@@ -189,28 +206,15 @@ img {
     }
 }
 
-@media (min-width: 700px) {
-
-    .text-bg {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+.bg-light {
+    background-color: lighten(#2b303b, 1.5%);
+    transition: background-color .3s ease-in-out;
+    
+    &:hover {
+        background-color: lighten(#2b303b, 2.5%);
     }
-
-    .text-bg--services {
-        background-image: url(/images/services.svg);
-    }
-
-    .text-bg--processes {
-        background-image: url(/images/processes.svg);
-    }
-
-    .text-bg--principles {
-        background-image: url(/images/principles.svg);
-    }   
 }
 
-.pattern-bg {
-    background: url(/images/pattern.svg); 
-    background-position: -24px 0;
+.shorten {
+    max-width: 780px;
 }
