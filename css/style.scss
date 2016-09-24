@@ -16,8 +16,6 @@ html, :root {
     "Segoe UI", "Roboto", "Oxygen", 
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
-    background-color: #292d38;
-    color: #ffffff;
     font-size: 100%;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
@@ -32,6 +30,7 @@ h1, h2, h3 {
 h1, h2, h3 {
     font-size: 100%;
     font-weight: normal;
+    font-family: "Maison Neue";
 }
 
 h1 {
@@ -71,10 +70,6 @@ img {
 .wrap--padding {
     padding-right: 24px;
     padding-left: 24px;
-}
-
-.h1, .h2, .h3 {
-    color: $color-primary;
 }
 
 .h1 {
@@ -208,11 +203,11 @@ img {
 
 @media (min-width: 700px) {
     .bg-light {
-        background-color: lighten(#2b303b, 1.5%);
+        background-color: rgba(0,0,0,.05);
         transition: background-color .3s ease-in-out;
 
         &:hover {
-            background-color: lighten(#2b303b, 2.5%);
+            background-color: rgba(0,0,0,.1);
         }
     }
 }
