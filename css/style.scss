@@ -3,7 +3,7 @@
 
 @import '_fonts.scss';
 
-$color-primary: #2986ff;
+$color-primary: #611bb4;
 
 * {
     margin: 0;
@@ -214,4 +214,8 @@ img {
 
 .shorten {
     max-width: 780px;
+}
+
+.b-r {
+    border-radius: 2px;
 }
