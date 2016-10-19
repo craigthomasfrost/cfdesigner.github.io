@@ -206,7 +206,7 @@ img {
         background-color: rgba(0,0,0,.05);
         transition: background-color .3s ease-in-out;
 
-        &:hover {
+        &--hovered:hover {
             background-color: rgba(0,0,0,.1);
         }
     }
