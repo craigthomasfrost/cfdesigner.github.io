@@ -1,13 +1,12 @@
 ---
 title: Home
 layout: default
-tagline: "Craig Frost, Designer & Strategist"
 ---
 <div class="bg-light p-t-1 p-b-1">
     <div class="wrap wrap--padding">
         <div class="layout">
             <div class="layout__item layout__item--6-of-12">
-                <p class="m-b-0">{{ page.tagline }}</p>
+                <p class="m-b-0">Craig Frost, Designer &amp; Strategist</p>
             </div>
             <div class="layout__item layout__item--6-of-12">
                 <div class="align-right">
