@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-tagline: Craig Frost, Designer & Strategist
+tagline: 'Craig Frost, Designer'
 ---
 <div class="bg-light p-t-1 p-b-1">
     <div class="wrap wrap--padding">
