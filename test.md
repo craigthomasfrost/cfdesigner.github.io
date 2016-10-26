@@ -4,6 +4,10 @@ test: This is an entry test
 test_markdown: This is a longer entry test
 test_image: /uploads/powering-global-payments-header.jpg
 test_datetime: 2016-10-18 00:00:00
+test_levels:
+  inside-level_markdown:
+  inside-level_image:
+_hide_content: true
 _comments:
   test: This is a test text field
   test_markdown: This is a test rich text field
