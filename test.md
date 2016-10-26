@@ -5,8 +5,8 @@ test_markdown: This is a longer entry test
 test_image: /uploads/powering-global-payments-header.jpg
 test_datetime: 2016-10-18 00:00:00
 test_levels:
-  inside-level_markdown:
-  inside-level_image:
+  inside-level_markdown: 'This is inside the level!'
+  inside-level_image: /uploads/powering-global-payments-header.jpg
 _hide_content: true
 _comments:
   test: This is a test text field
