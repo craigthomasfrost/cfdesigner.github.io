@@ -1,224 +1,51 @@
 ---
 ---
 
-@import '_fonts.scss';
-
-$color-primary: #611bb4;
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, :root {
-    font-family: "akkurat", -apple-system, BlinkMacSystemFont, 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "akkurat", -apple-system, BlinkMacSystemFont, 
     "Segoe UI", "Roboto", "Oxygen", 
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 100%;
-    line-height: 1.8;
-    -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-p,
-h1, h2, h3 {
-    margin-bottom: 1rem;
-}
-
-h1, h2, h3 {
-    font-size: 100%;
-    font-weight: normal;
-    font-family: "Maison Neue";
-}
-
-h1 {
-    line-height: 1.2;
-}
-
-h2, h3 {
-    line-height: 1.5;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+div {
+  max-width: 450px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
 }
 
-ul li:before {
-    content: '-';
-    margin-right: 1rem;
+li {
+  margin-bottom: 12px;
 }
 
-img {
-    max-width: 100%;
+p {
+  margin-bottom: 24px;
 }
 
-@import '_grid.scss';
-
-.wrap {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
+a {
+  color: gray;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
 }
 
-.wrap--padding {
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.h1 {
-    font-size: 54px;
-}
-
-.h2 {
-    font-size: 36px;
-}
-
-.h3 {
-    font-size: 28px;
-}
-
-@each $size, $width in $breakpoints {
-
-    @media (min-width: $width) {
-        .h1\@#{$size} {
-            font-size: 54px;
-        }
-
-        .h2\@#{$size} {
-            font-size: 36px;
-        }
-
-        .h3\@#{$size} {
-            font-size: 28px;
-        }
-    }
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.link {
-    padding-bottom: 6px;
-    border-bottom: 1px solid;
-    transition: color .3s ease-in-out;
-    
-    &:hover {
-        color: $color-primary;
-    }
-}
-
-.align-right {
-    text-align: right;
-}
-
-@for $i from 0 through 8 {
-    .p-#{$i} {
-        padding: #{$i}rem;
-    }
-    .p-t-#{$i} {
-        padding-top: #{$i}rem;
-    }
-    .p-r-#{$i} {
-        padding-right: #{$i}rem;
-    }
-    .p-b-#{$i} {
-        padding-bottom: #{$i}rem;
-    }
-    .p-l-#{$i} {
-        padding-left: #{$i}rem;
-    }
-}
-
-@each $size, $width in $breakpoints {
-
-    @media (min-width: $width) {
-        @for $i from 0 through 12 {
-            .p-#{$i}\@#{$size} {
-                padding: #{$i}rem;
-            }
-            .p-t-#{$i}\@#{$size} {
-                padding-top: #{$i}rem;
-            }
-            .p-r-#{$i}\@#{$size} {
-                padding-right: #{$i}rem;
-            }
-            .p-b-#{$i}\@#{$size} {
-                padding-bottom: #{$i}rem;
-            }
-            .p-l-#{$i}\@#{$size} {
-                padding-left: #{$i}rem;
-            }
-        }
-    }
-}
-
-@for $i from 0 through 8 {
-    .m-#{$i} {
-        margin: #{$i}rem;
-    }
-    .m-t-#{$i} {
-        margin-top: #{$i}rem;
-    }
-    .m-r-#{$i} {
-        margin-right: #{$i}rem;
-    }
-    .m-b-#{$i} {
-        margin-bottom: #{$i}rem;
-    }
-    .m-l-#{$i} {
-        margin-left: #{$i}rem;
-    }
-}
-
-@each $size, $width in $breakpoints {
-
-    @media (min-width: $width) {
-        @for $i from 0 through 8 {
-            .m-#{$i}\@#{$size} {
-                margin: #{$i}rem;
-            }
-            .m-t-#{$i}\@#{$size} {
-                margin-top: #{$i}rem;
-            }
-            .m-r-#{$i}\@#{$size} {
-                margin-right: #{$i}rem;
-            }
-            .m-b-#{$i}\@#{$size} {
-                margin-bottom: #{$i}rem;
-            }
-            .m-l-#{$i}\@#{$size} {
-                margin-left: #{$i}rem;
-            }
-        }
-    }
-}
-
-@media (min-width: 700px) {
-    .bg-light {
-        background-color: rgba(0,0,0,.03);
-        transition: background-color .3s ease-in-out;
-
-        &--hovered:hover {
-            background-color: rgba(0,0,0,.05);
-        }
-    }
-    .border {
-        border: 1px solid rgba(0,0,0,.07);
-    }
-}
-
-.shorten {
-    max-width: 780px;
-}
-
-.b-r {
-    border-radius: 2px;
+a:hover {
+  color: black;
+  cursor: pointer;
 }
