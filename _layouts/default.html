@@ -48,6 +48,10 @@
                     }
                  html += '<a href="'+singleEvent.url+'">tweet</a>';
                 html += ' on ' + twitterLink;
+            } else if (singleEvent.source == 'pinterest') {
+             html += 'Pinned a ';
+             html += '<a href="https://uk.pinterest.com/pin/'+singleEvent.url+'">Pin</a>';
+             html += ' on ' + pinterestLink;
             }
             html += '</li>';
             list.append(html);
