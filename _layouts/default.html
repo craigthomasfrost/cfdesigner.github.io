@@ -22,23 +22,29 @@
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script>
-        var api         = 'https://sheetsu.com/apis/v1.0/068d4a8ca418',
-        twitterLink = '<a href="https://twitter.com/_ctfd_uk">Twitter</a>',
-        pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/">Pinterest</a>';
+        var api         = 'https://craigfrost.herokuapp.com/api/classes/events',
+            twitterLink = '<a href="https://twitter.com/_ctfd_uk">Twitter</a>',
+            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/">Pinterest</a>'
         $.ajax({
-            url: api,
-            dataType: 'json',
-            type: 'GET',
-            success: function(data) {
-            $('.loader').hide();
-            addEvents(data);
+         url: api,
+         dataType: 'json',
+         type: 'GET',
+         success: function(data) {
+           addEvents(data);
+           $('.loader').hide();
          },
          error: function(data) {
-            console.log(data);
-         }
-        });
-        addEvents = function(events) {
-            var list = $('.js-events');
+           console.log(data);
+         },
+         beforeSend: setHeader,
+        });        
+        setHeader = function (xhr) {
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.setRequestHeader('X-Parse-Application-Id', 'craigFrostApi');
+        }
+        addEvents = function(entries) {
+            var events = entries.results,
+                list = $('.js-events');
             for(var i=0; i<events.length; i++) {
                 singleEvent = events[i];
                 html = '<li>';
@@ -48,15 +54,15 @@
                     } else {
                         html += 'Posted a ';
                     }
-                 html += '<a href="'+singleEvent.url+'">tweet</a>';
-                html += ' on ' + twitterLink;
-            } else if (singleEvent.source == 'pinterest') {
-             html += 'Pinned a ';
-             html += '<a href="https://uk.pinterest.com/pin/'+singleEvent.url+'">Pin</a>';
-             html += ' on ' + pinterestLink;
-            }
-            html += '</li>';
-            list.append(html);
+                    html += '<a href="'+singleEvent.url+'">tweet</a>';
+                    html += ' on ' + twitterLink;
+                } else if (singleEvent.source == 'pinterest') {
+                    html += 'Pinned a ';
+                    html += '<a href="https://uk.pinterest.com/pin/'+singleEvent.url+'">Pin</a>';
+                    html += ' on ' + pinterestLink;
+                }
+                html += '</li>';
+                list.append(html);
             }
         }
         </script>
