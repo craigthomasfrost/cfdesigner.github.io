@@ -10,4 +10,6 @@ tagline: 'Craig Frost, Designer & Strategist'
     <li><a href="https://uk.linkedin.com/in/craigtfrost">LinkedIn</a></li>
     <li><a href="https://dribbble.com/_ctf">Dribbble</a></li>
    </ul>
+   —
+   <ul class="js-events"></ul>
  </div>
