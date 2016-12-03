@@ -38,7 +38,7 @@
          },
          beforeSend: setHeader,
         });        
-        setHeader = function (xhr) {
+        function setHeader(xhr) {
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.setRequestHeader('X-Parse-Application-Id', 'craigFrostApi');
         }
