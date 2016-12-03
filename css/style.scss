@@ -10,10 +10,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   display: flex;
-  align-items: center;
+  padding-top: 20vh;
   justify-content: center;
   font-family: "akkurat", -apple-system, BlinkMacSystemFont, 
     "Segoe UI", "Roboto", "Oxygen", 
@@ -31,6 +29,7 @@ div {
 ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 li {
@@ -39,6 +38,13 @@ li {
 
 p {
   margin-bottom: 24px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid lightgray;
+  margin-bottom: 24px;
+  width: 24px;
 }
 
 a {
