@@ -30,6 +30,7 @@
             dataType: 'json',
             type: 'GET',
             success: function(data) {
+            $('.loader').hide();
             addEvents(data);
          },
          error: function(data) {
