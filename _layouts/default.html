@@ -20,5 +20,39 @@
         ga('create', 'UA-55807633-1', 'auto');
         ga('send', 'pageview');
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+        var api         = 'https://sheetsu.com/apis/v1.0/068d4a8ca418',
+        twitterLink = '<a href="https://twitter.com/_ctfd_uk">Twitter</a>'
+        $.ajax({
+            url: api,
+            dataType: 'json',
+            type: 'GET',
+            success: function(data) {
+            addEvents(data);
+         },
+         error: function(data) {
+            console.log(data);
+         }
+        });
+        addEvents = function(events) {
+            var list = $('.js-events');
+            for(var i=0; i<events.length; i++) {
+                singleEvent = events[i];
+                html = '<li>';
+                if (singleEvent.source == 'twitter') {
+                    if (singleEvent.recipient != "") {
+                        html += 'Replied to a ';
+                    } else {
+                        html += 'Posted a ';
+                    }
+                 html += '<a href="'+singleEvent.url+'">tweet</a>';
+                html += ' on ' + twitterLink;
+            }
+            html += '</li>';
+            list.append(html);
+            }
+        }
+        </script>
     </body>
 </html>
