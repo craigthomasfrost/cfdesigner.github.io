@@ -1,10 +1,10 @@
 ---
 title: Home
 layout: default
-tagline: 'Craig Frost, Designer & Strategist'
+tagline: 'Craig Frost, Designer'
 ---
 <div>
-  <p>Craig Frost is a designer at <a href="https://pusher.com/">Pusher</a> in London.</p>
+  <p>Craig Frost is a designer at <a href="https://pusher.com/">Pusher</a> in London</p>
   <ul>
     <li><a href="https://twitter.com/@_ctfd_uk">Twitter</a></li>
     <li><a href="https://uk.linkedin.com/in/craigtfrost">LinkedIn</a></li>
