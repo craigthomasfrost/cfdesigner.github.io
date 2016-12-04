@@ -39,11 +39,7 @@
               var object = results[i],
                   html = '<li>';
               if (object.get('source') == 'twitter') {
-                if(object.get('recipient') == '') {
-                  html += 'Replied to a ';
-                } else {
-                  html += 'Posted a ';
-                }
+                html += 'Posted a ';
                 html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>';
                 html += ' on ' + twitterLink;
               } else if (object.get('source') == 'pinterest') {
