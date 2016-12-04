@@ -21,50 +21,43 @@
         ga('send', 'pageview');
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
         <script>
-        var api         = 'https://craigfrost.herokuapp.com/api/classes/events',
+        Parse.initialize("craigFrostApi");
+        Parse.serverURL = 'https://craigfrost.herokuapp.com/api'
+
+        var events = Parse.Object.extend("events"),
+            query = new Parse.Query(events),
             twitterLink = '<a href="https://twitter.com/_ctfd_uk">Twitter</a>',
-            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/">Pinterest</a>'
-        $.ajax({
-         url: api,
-         dataType: 'json',
-         type: 'GET',
-         success: function(data) {
-           addEvents(data);
-           $('.loader').hide();
-         },
-         error: function(data) {
-           console.log(data);
-         },
-         beforeSend: setHeader,
-        });        
-        function setHeader(xhr) {
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.setRequestHeader('X-Parse-Application-Id', 'craigFrostApi');
-        }
-        addEvents = function(entries) {
-            var events = entries.results,
-                list = $('.js-events');
-            for(var i=0; i<events.length; i++) {
-                singleEvent = events[i];
-                html = '<li>';
-                if (singleEvent.source == 'twitter') {
-                    if (singleEvent.recipient != "") {
-                        html += 'Replied to a ';
-                    } else {
-                        html += 'Posted a ';
-                    }
-                    html += '<a href="'+singleEvent.url+'">tweet</a>';
-                    html += ' on ' + twitterLink;
-                } else if (singleEvent.source == 'pinterest') {
-                    html += 'Pinned a ';
-                    html += '<a href="https://uk.pinterest.com/pin/'+singleEvent.url+'">Pin</a>';
-                    html += ' on ' + pinterestLink;
+            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/">Pinterest</a>';
+
+        query.find({
+          success: function(results) {
+            var list = $('.js-events');
+            for (var i = 0; i < results.length; i++) {
+              var object = results[i],
+                  html = '<li>';
+              if (object.get('source') == 'twitter') {
+                if(object.get('recipient') == '') {
+                  html += 'Replied to a ';
+                } else {
+                  html += 'Posted a ';
                 }
-                html += '</li>';
-                list.append(html);
-            }
-        }
+                html += '<a href="'+object.get('url')+'">tweet</a>';
+                html += ' on ' + twitterLink;
+              } else if (object.get('source') == 'pinterest') {
+                html += 'Pinned a ';
+                html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'">Pin</a>';
+                html += ' on ' + pinterestLink;
+              }
+              html += '</li>'
+              list.append(html);
+            } 
+          },
+          error: function(error) {
+            console.log("Error: " + error.code + " " + error.message);
+          }
+        });
         </script>
     </body>
 </html>
