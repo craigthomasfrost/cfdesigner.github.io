@@ -33,6 +33,7 @@
 
         query.find({
           success: function(results) {
+            $('.loader').hide();
             var list = $('.js-events');
             for (var i = 0; i < results.length; i++) {
               var object = results[i],
