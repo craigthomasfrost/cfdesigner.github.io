@@ -28,8 +28,8 @@
 
         var events = Parse.Object.extend("events"),
             query = new Parse.Query(events),
-            twitterLink = '<a href="https://twitter.com/_ctfd_uk">Twitter</a>',
-            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/">Pinterest</a>';
+            twitterLink = '<a href="https://twitter.com/_ctfd_uk" target="_blank">Twitter</a>',
+            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>';
 
         query.find({
           success: function(results) {
@@ -44,11 +44,11 @@
                 } else {
                   html += 'Posted a ';
                 }
-                html += '<a href="'+object.get('url')+'">tweet</a>';
+                html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>';
                 html += ' on ' + twitterLink;
               } else if (object.get('source') == 'pinterest') {
                 html += 'Pinned a ';
-                html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'">Pin</a>';
+                html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'" target="_blank">Pin</a>';
                 html += ' on ' + pinterestLink;
               }
               html += '</li>'
