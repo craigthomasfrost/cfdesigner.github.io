@@ -51,6 +51,10 @@
                 html += '<a href="https://foursquare.com/v/'+object.get('url')+'" target="_blank">';
                 html += object.get('text') + '</a>';
                 html += ' on Swarm';
+              } else if (object.get('source') == 'monzo') {
+                html += 'Topped up ';
+                html += '£' + object.get('amount');
+                html += ' via Monzo';
               }
               html += '</li>'
               list.append(html);
