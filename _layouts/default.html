@@ -53,7 +53,7 @@
                 html += ' on Swarm';
               } else if (object.get('source') == 'monzo') {
                 html += 'Topped up ';
-                html += '£' + object.get('amount');
+                html += '£' + (object.get('amount')/100);
                 html += ' via Monzo';
               }
               html += '</li>'
