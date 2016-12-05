@@ -29,7 +29,8 @@
         var events = Parse.Object.extend("events"),
             query = new Parse.Query(events),
             twitterLink = '<a href="https://twitter.com/_ctfd_uk" target="_blank">Twitter</a>',
-            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>';
+            pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>',
+            productHuntLink = '<a href="https://www.producthunt.com/@_ctfd_uk">Product Hunt</a>';
 
         query.find({
           success: function(results) {
@@ -55,6 +56,10 @@
                 html += 'Topped up ';
                 html += '£' + (object.get('amount')/100);
                 html += ' via Monzo';
+              } else if (object.get('source') == 'productHunt') {
+                html += 'Upvoted a ';
+                html += '<a href="'+object.get('url')+'" target="_blank">product</a>';
+                html += ' on ' + productHuntLink;
               }
               html += '</li>'
               list.append(html);
