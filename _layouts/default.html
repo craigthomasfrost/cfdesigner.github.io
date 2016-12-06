@@ -69,7 +69,7 @@
               } else if (object.get('source') == 'trello') {
                 html += 'Added a ';
                 html += '<a href="'+object.get('url')+'" target="_blank">card</a>';
-                html += ' on <a href="https://trello.com/b/'+object.get('url')+'" target="_blank">Trello</a>';
+                html += ' on <a href="https://trello.com/b/'+object.get('board')+'" target="_blank">Trello</a>';
               }
               html += '</li>'
               list.append(html);
