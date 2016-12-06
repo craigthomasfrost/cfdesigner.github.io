@@ -52,7 +52,7 @@
               } else if (object.get('source') == 'swarm') {
                 html += 'Checked in to ';
                 html += '<a href="https://foursquare.com/v/'+object.get('url')+'" target="_blank">';
-                html += object.get('text') + '</a>';
+                html += object.get('text')+'</a>';
                 html += ' on Swarm';
               } else if (object.get('source') == 'monzo') {
                 html += 'Topped up ';
@@ -67,6 +67,10 @@
                 html += 'Posted a ';
                 html += '<a href="'+object.get('url')+'" target="_blank">shot</a>';
                 html += ' on ' + dribbbleLink;
+              } (object.get('source') == 'trello') {
+                html += 'Added a ';
+                html += '<a href="'+object.get('url')+'" target="_blank">card</a>';
+                html += ' on <a href="https://trello.com/b/'+object.get('url')+'" target="_blank">Trello</a>';
               }
               html += '</li>'
               list.append(html);
