@@ -55,7 +55,7 @@
                 html += object.get('text')+'</a>';
                 html += ' on Swarm';
               } else if (object.get('source') == 'monzo') {
-                  if(object.get('isTopup') == true) {
+                  if(object.get('isTopup') == 'true') {
                     html += 'Topped up '; 
                   } else {
                     html += 'Spent ';
