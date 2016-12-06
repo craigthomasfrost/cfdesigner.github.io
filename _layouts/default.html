@@ -31,7 +31,8 @@
             twitterLink = '<a href="https://twitter.com/_ctfd_uk" target="_blank">Twitter</a>',
             pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>',
             productHuntLink = '<a href="https://www.producthunt.com/@_ctfd_uk" target="_blank">Product Hunt</a>',
-            dribbbleLink = '<a href="https://dribbble.com/_ctf" target="_blank">Dribbble</a>';
+            dribbbleLink = '<a href="https://dribbble.com/_ctf" target="_blank">Dribbble</a>',
+            monzoLink = '<a href="https://monzo.com/" target="_blank">Monzo</a>';
 
         query.find({
           success: function(results) {
@@ -56,7 +57,7 @@
               } else if (object.get('source') == 'monzo') {
                 html += 'Topped up ';
                 html += '£' + (object.get('amount')/100);
-                html += ' via Monzo';
+                html += ' via ' + monzoLink;
               } else if (object.get('source') == 'productHunt') {
                 html += 'Upvoted a ';
                 html += '<a href="'+object.get('url')+'" target="_blank">product</a>';
