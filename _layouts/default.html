@@ -35,7 +35,7 @@
 
         query.find({
           success: function(results) {
-            const loader = getElementsByClassName('loader')[0]
+            const loader = document.getElementsByClassName('loader')[0]
             loader.style.display = 'none'
             const list = document.getElementsByClassName('js-events')[0]
             for (let i = 0; i < results.length; i++) {
