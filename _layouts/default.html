@@ -39,8 +39,8 @@
             loader.style.display = 'none'
             const list = document.getElementsByClassName('js-events')[0]
             for (let i = 0; i < results.length; i++) {
-              const object = results[i],
-                    html = '<li>';
+              const object = results[i]
+              let html = '<li>';
               if (object.get('source') == 'twitter') {
                 html += 'Posted a ';
                 html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>';
