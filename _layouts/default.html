@@ -24,67 +24,81 @@
         <script>
         Parse.initialize("craigFrostApi")
         Parse.serverURL = 'https://craigfrost.herokuapp.com/api'
+            
+        let page = 0,
+            displayLimit = 10
 
         const events = Parse.Object.extend("events"),
               query = new Parse.Query(events),
+              loadMore = document.getElementsByClassName('js-load-more')[0],
+              loader = document.getElementsByClassName('loader')[0],
               twitterLink = '<a href="https://twitter.com/_ctfd_uk" target="_blank">Twitter</a>',
               pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>',
               productHuntLink = '<a href="https://www.producthunt.com/@_ctfd_uk" target="_blank">Product Hunt</a>',
               dribbbleLink = '<a href="https://dribbble.com/_ctf" target="_blank">Dribbble</a>',
               monzoLink = '<a href="https://monzo.com/" target="_blank">Monzo</a>'
         
-        query.descending('createdAt');
-
-        query.find({
-          success: function(results) {
-            const loader = document.getElementsByClassName('loader')[0]
-            loader.style.display = 'none'
-            const list = document.getElementsByClassName('js-events')[0]
-            for (let i = 0; i < results.length; i++) {
-              const object = results[i]
-              let html = '<li>'
-              if (object.get('source') == 'twitter') {
-                html += 'Posted a '
-                html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>'
-                html += ' on ' + twitterLink
-              } else if (object.get('source') == 'pinterest') {
-                html += 'Pinned a '
-                html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'" target="_blank">pin</a>'
-                html += ' on ' + pinterestLink
-              } else if (object.get('source') == 'swarm') {
-                html += 'Checked in to '
-                html += '<a href="https://foursquare.com/v/'+object.get('url')+'" target="_blank">'
-                html += object.get('text')+'</a>'
-                html += ' on Swarm'
-              } else if (object.get('source') == 'monzo') {
-                  if(object.get('isTopup') == 'true') {
-                    html += 'Topped up '
-                  } else {
-                    html += 'Spent '
+        query.descending('createdAt')
+        query.limit(displayLimit)
+        query.skip(page * displayLimit)
+        
+        function getLatest() {
+            query.find({
+              success: function(results) {
+                loader.style.display = 'none'
+                const list = document.getElementsByClassName('js-events')[0]
+                for (let i = 0; i < results.length; i++) {
+                  const object = results[i]
+                  let html = '<li>'
+                  if (object.get('source') == 'twitter') {
+                    html += 'Posted a '
+                    html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>'
+                    html += ' on ' + twitterLink
+                  } else if (object.get('source') == 'pinterest') {
+                    html += 'Pinned a '
+                    html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'" target="_blank">pin</a>'
+                    html += ' on ' + pinterestLink
+                  } else if (object.get('source') == 'swarm') {
+                    html += 'Checked in to '
+                    html += '<a href="https://foursquare.com/v/'+object.get('url')+'" target="_blank">'
+                    html += object.get('text')+'</a>'
+                    html += ' on Swarm'
+                  } else if (object.get('source') == 'monzo') {
+                      if(object.get('isTopup') == 'true') {
+                        html += 'Topped up '
+                      } else {
+                        html += 'Spent '
+                      }
+                    html += '£' + (Number(object.get('amount'))/100).toFixed(2)
+                    html += ' via ' + monzoLink
+                  } else if (object.get('source') == 'productHunt') {
+                    html += 'Upvoted a '
+                    html += '<a href="'+object.get('url')+'" target="_blank">product</a>'
+                    html += ' on ' + productHuntLink
+                  } else if (object.get('source') == 'dribbble') {
+                    html += 'Posted a '
+                    html += '<a href="'+object.get('url')+'" target="_blank">shot</a>'
+                    html += ' on ' + dribbbleLink
+                  } else if (object.get('source') == 'trello') {
+                    html += 'Added a '
+                    html += '<a href="'+object.get('url')+'" target="_blank">card</a>'
+                    html += ' on <a href="https://trello.com/b/'+object.get('board')+'" target="_blank">Trello</a>'
                   }
-                html += '£' + (Number(object.get('amount'))/100).toFixed(2)
-                html += ' via ' + monzoLink
-              } else if (object.get('source') == 'productHunt') {
-                html += 'Upvoted a '
-                html += '<a href="'+object.get('url')+'" target="_blank">product</a>'
-                html += ' on ' + productHuntLink
-              } else if (object.get('source') == 'dribbble') {
-                html += 'Posted a '
-                html += '<a href="'+object.get('url')+'" target="_blank">shot</a>'
-                html += ' on ' + dribbbleLink
-              } else if (object.get('source') == 'trello') {
-                html += 'Added a '
-                html += '<a href="'+object.get('url')+'" target="_blank">card</a>'
-                html += ' on <a href="https://trello.com/b/'+object.get('board')+'" target="_blank">Trello</a>'
+                  html += '</li>'
+                  list.innerHTML += html
+                } 
+              },
+              error: function(error) {
+                console.log("Error: " + error.code + " " + error.message)
               }
-              html += '</li>'
-              list.innerHTML += html
-            } 
-          },
-          error: function(error) {
-            console.log("Error: " + error.code + " " + error.message)
-          }
-        })
+            })
+        )
+        getLatest()
+        loadMore.click(function() {
+            loader.style.display = 'block'
+            getLatest()
+            page++
+        }
         </script>
     </body>
 </html>
