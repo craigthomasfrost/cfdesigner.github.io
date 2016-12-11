@@ -13,5 +13,5 @@ tagline: 'Craig Frost, Designer'
    <hr>
    <div class="loader"></div>
    <ul class="js-events"></ul>
-   <a href="#">Older</a>
+   <a href="#" class="js-load-more">Older</a>
  </div>
