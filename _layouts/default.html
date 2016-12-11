@@ -97,7 +97,9 @@
             event.preventDefault();
             loader.style.display = 'block'
             page += 1
-            getLatest()
+            setTimeout(function() {
+                getLatest()
+            },2000)
         })
         </script>
     </body>
