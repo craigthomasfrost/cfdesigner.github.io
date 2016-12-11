@@ -60,7 +60,7 @@
                   } else {
                     html += 'Spent '
                   }
-                html += '£' + (object.get(('amount')/100).toFixed(2))
+                html += '£' + (object.get('amount'.toFixed(2))
                 html += ' via ' + monzoLink
               } else if (object.get('source') == 'productHunt') {
                 html += 'Upvoted a '
