@@ -38,7 +38,7 @@
               dribbbleLink = '<a href="https://dribbble.com/_ctf" target="_blank">Dribbble</a>',
               monzoLink = '<a href="https://monzo.com/" target="_blank">Monzo</a>'
         
-        (function getLatest() {
+        function getLatest() {
             query.descending('createdAt')
             query.limit(displayLimit)
             query.skip(page * displayLimit)
@@ -91,7 +91,8 @@
                 console.log("Error: " + error.code + " " + error.message)
               }
             })
-        })()
+        }
+        getLatest()
         loadMore.addEventListener('click', function(event) {
             event.preventDefault();
             loader.style.display = 'block'
