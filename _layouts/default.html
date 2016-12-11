@@ -94,7 +94,8 @@
             })
         }
         getLatest()
-        loadMore.click(function() {
+        loadMore.click(function(event) {
+            event.preventDefault();
             loader.style.display = 'block'
             getLatest()
             page++
