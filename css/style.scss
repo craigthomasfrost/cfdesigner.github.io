@@ -65,6 +65,10 @@ a.js-load-more {
   border-radius: 3px;
 }
 
+a.js-load-more:hover {
+  border: 1px solid black;
+}
+
 .loader {
   width: 16px;
   height: 16px;
