@@ -11,7 +11,7 @@ tagline: 'Craig Frost, Designer'
     <li><a href="https://dribbble.com/_ctf">Dribbble</a></li>
    </ul>
    <hr>
-   <div class="loader"></div>
    <ul class="js-events"></ul>
+   <div class="loader"></div>
    <a href="#" class="js-load-more">Older</a>
  </div>
