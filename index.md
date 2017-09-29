@@ -4,14 +4,5 @@ layout: default
 tagline: 'Craig Frost, Designer'
 ---
 <div>
-  <p>Craig Frost is a designer at <a href="https://pusher.com/">Pusher</a> in London</p>
-  <ul>
-    <li><a href="https://twitter.com/@_ctfd_uk">Twitter</a></li>
-    <li><a href="https://uk.linkedin.com/in/craigtfrost">LinkedIn</a></li>
-    <li><a href="https://dribbble.com/_ctf">Dribbble</a></li>
-   </ul>
-   <hr>
-   <ul class="js-events"></ul>
-   <div class="loader"></div>
-   <a href="#" class="js-load-more">Older</a>
+  <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/file/W1ea6dtLZstt8vCc3J322pmv/Craig-Frost-Designer" />
  </div>

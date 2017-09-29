@@ -2,105 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
-        <title>Craig Frost, Designer and Strategist in London</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Craig Frost, Product Designer in London</title>
         <meta name="description" content="Craig Frost is a London based Designer and Strategist available for hire">
         <meta name="author" content="Craig Frost">
-        <meta name="google-site-verification" content="wbojZgTfEnoP5vTJegckMGMYj3G1kfviak5lEwZk9S0" />      
+        <meta name="google-site-verification" content="wbojZgTfEnoP5vTJegckMGMYj3G1kfviak5lEwZk9S0" />
         <link rel="stylesheet" href="/css/style.css">
-    </head>    
+    </head>
     <body>
         {{ content }}
         <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-55807633-1', 'auto');
-        ga('send', 'pageview');
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/1.9.2/parse.js"></script>
-        <script>
-        Parse.initialize("craigFrostApi")
-        Parse.serverURL = 'https://craigfrost.herokuapp.com/api'
-            
-        let page = 0,
-            displayLimit = 10
-
-        const events = Parse.Object.extend("events"),
-              query = new Parse.Query(events),
-              loadMore = document.getElementsByClassName('js-load-more')[0],
-              loader = document.getElementsByClassName('loader')[0],
-              twitterLink = '<a href="https://twitter.com/_ctfd_uk" target="_blank">Twitter</a>',
-              pinterestLink = '<a href="https://uk.pinterest.com/cfrostdesign/" target="_blank">Pinterest</a>',
-              productHuntLink = '<a href="https://www.producthunt.com/@_ctfd_uk" target="_blank">Product Hunt</a>',
-              dribbbleLink = '<a href="https://dribbble.com/_ctf" target="_blank">Dribbble</a>',
-              monzoLink = '<a href="https://monzo.com/" target="_blank">Monzo</a>'
-        
-        function getLatest() {
-            query.descending('createdAt')
-            query.limit(displayLimit)
-            query.skip(page * displayLimit)
-            query.find({
-              success: function(results) {
-                loader.style.display = 'none'
-                const list = document.getElementsByClassName('js-events')[0]
-                for (let i = 0; i < results.length; i++) {
-                  const object = results[i]
-                  let html = '<li>'
-                  if (object.get('source') == 'twitter') {
-                    html += 'Posted a '
-                    html += '<a href="'+object.get('url')+'" target="_blank">tweet</a>'
-                    html += ' on ' + twitterLink
-                  } else if (object.get('source') == 'pinterest') {
-                    html += 'Pinned a '
-                    html += '<a href="https://uk.pinterest.com/pin/'+object.get('url')+'" target="_blank">pin</a>'
-                    html += ' on ' + pinterestLink
-                  } else if (object.get('source') == 'swarm') {
-                    html += 'Checked in to '
-                    html += '<a href="https://foursquare.com/v/'+object.get('url')+'" target="_blank">'
-                    html += object.get('text')+'</a>'
-                    html += ' on Swarm'
-                  } else if (object.get('source') == 'monzo') {
-                      if(object.get('isTopup') == 'true') {
-                        html += 'Topped up '
-                      } else {
-                        html += 'Spent '
-                      }
-                    html += '£' + (Number(object.get('amount'))/100).toFixed(2)
-                    html += ' via ' + monzoLink
-                  } else if (object.get('source') == 'productHunt') {
-                    html += 'Upvoted a '
-                    html += '<a href="'+object.get('url')+'" target="_blank">product</a>'
-                    html += ' on ' + productHuntLink
-                  } else if (object.get('source') == 'dribbble') {
-                    html += 'Posted a '
-                    html += '<a href="'+object.get('url')+'" target="_blank">shot</a>'
-                    html += ' on ' + dribbbleLink
-                  } else if (object.get('source') == 'trello') {
-                    html += 'Added a '
-                    html += '<a href="'+object.get('url')+'" target="_blank">card</a>'
-                    html += ' on <a href="https://trello.com/b/'+object.get('board')+'" target="_blank">Trello</a>'
-                  }
-                  html += '</li>'
-                  list.innerHTML += html
-                } 
-              },
-              error: function(error) {
-                console.log("Error: " + error.code + " " + error.message)
-              }
-            })
-        }
-        getLatest()
-        loadMore.addEventListener('click', function(event) {
-            event.preventDefault();
-            loader.style.display = 'block'
-            page += 1
-            setTimeout(function() {
-                getLatest()
-            }, 1000)
-        })
+          ga('create', 'UA-55807633-1', 'auto');
+          ga('send', 'pageview');
         </script>
     </body>
 </html>
