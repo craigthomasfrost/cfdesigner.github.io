@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craig Frost, Designer</title>
+  <style>
+    @font-face {
+      font-family: 'Px Grotesk';
+      src: url('/fonts/px-grotesk-regular.woff') format('woff'),
+      url('/fonts/px-grotesk-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Px Grotesk';
+      src: url('/fonts/px-grotesk-italic.woff') format('woff'),
+      url('/fonts/px-grotesk-italic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Px Grotesk';
+      src: url('/fonts/px-grotesk-bold.woff') format('woff'),
+      url('/fonts/px-grotesk-bold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Px Grotesk';
+      src: url('/fonts/px-grotesk-bolditalic.woff') format('woff'),
+      url('/fonts/px-grotesk-bolditalic.ttf') format('truetype');
+      font-weight: 600;
+      font-style: italic;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Px Grotesk", sans-serif;
+      color: #300D4F;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    article {
+      max-width: 28rem;
+      margin-top: 18vh;
+      padding: 1.5rem;
+    }
+    article > * + * {
+      margin-top: 1.5rem;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    p {
+      font-weight: 400;
+      line-height: 1.6;
+      color: #95A0BA;
+    }
+    a {
+      color: #00DE72;
+      text-decoration: none;
+      transition: color .5s ease;
+    }
+    a:hover {
+      color: #05D36D;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Craig Frost is a Designer at <a href="https://pusher.com/" target="_blank" rel="noopener noreferrer">Pusher</a> in London, UK.</h1>
+    <p>Pusher is a developer tools company building a platform of realtime communication and collaboration APIs. We're making it easier and faster for product creators to build world-class realtime experiences.</p>
+    <p>If you'd like to talk about design, design management, or anything that we're doing at Pusher, reach out to me on <a href="https://twitter.com/_ctfd_uk" target="_blank" rel="noopener noreferrer">Twitter</a> - I'd love to chat. If you'd like to join us on our mission, check out our <a href="https://pusher.com/jobs" target="_blank" rel="noopener noreferrer">jobs page</a> and apply.</p>
+  </article>
+</body>
+</html>
