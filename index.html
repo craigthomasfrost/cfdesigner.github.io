@@ -13,6 +13,14 @@
         url('fonts/UntitledSansWeb-Regular.woff') format('woff'),
         url('fonts/UntitledSansWeb-Regular.woff2') format('woff2');
   }
+  @keyframes colorchange {
+    from {
+      color: red;
+    }
+    to {
+      color: blue;
+    }
+  }
   * {
     margin: 0;
     padding: 0;
@@ -34,6 +42,7 @@
   h1 {
     color: red;
     margin-bottom: 1rem;
+    animation: colorchange 3s infinite alternate;
   }
   p {
     line-height: 1.6;
