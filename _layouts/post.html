@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<span style="font-size: 2rem; margin-bottom: 1rem; display: inline-block">
-    <a href="/">&#8617;</a>
-</span>
+<a href="/" style="margin-bottom: 1rem; display: inline-block">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29.76 12.48C34.2666 12.48 37.92 16.1334 37.92 20.64C37.92 25.1466 34.2666 28.8 29.76 28.8H16.1653V21.6L7.67999 30.0853L16.1653 38.5706V31.68H29.76C35.8572 31.68 40.8 26.7372 40.8 20.64C40.8 14.5428 35.8572 9.60001 29.76 9.60001V12.48Z" fill="currentcolor"/>
+    </svg>            
+</a>
 <h1>{{ page.title }}</h1>
 <span class="date">{{ page.date | date: "%A, %B %d, %Y" }}</span>
 {{ content }}
