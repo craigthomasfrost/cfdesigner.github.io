@@ -31,8 +31,8 @@ html, :root {
     font-size: 100%;
 }
 body {
-    background-color: #1f2942;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1f2942;
     padding-top: 12rem;
     padding-right: 1rem;
     padding-bottom: 4rem;
@@ -94,7 +94,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    opacity: .5;
+    opacity: .75;
     transition: opacity .3s ease;
 }
 a:hover {
