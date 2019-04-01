@@ -43,22 +43,22 @@ article {
     margin: 0 auto;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
+@media (min-width: 36rem) {
+    h1 {
+        font-size: 2rem;
+    }
+}
 h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .3rem;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-}
-@media (min-width: 36rem) {
-    h2 {
-        font-size: 2rem;
-    }
 }
 p {
     font-size: 1rem;
