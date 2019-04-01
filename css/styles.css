@@ -94,7 +94,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    opacity: .75;
+    opacity: .65;
     transition: opacity .3s ease;
 }
 a:hover {
