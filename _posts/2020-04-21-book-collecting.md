@@ -61,4 +61,4 @@ Whether you mention it, discuss it in some detail, or give it away, not only hav
 
 ---
 
-I'll wrap up by calling out that most of these ideas are not very defensible, and acknowledge that I could be accused of thinly disguised conformation bias (and that I'd probably agree). But if you can't indulge your own biases on a personal blog, I'm not sure where you can indulge them.
+I'll wrap up by calling out that most of these ideas are not very defensible, and acknowledge that I could be accused of thinly disguised confirmation bias (and that I'd probably agree). But if you can't indulge your own biases on a personal blog, I'm not sure where you can indulge them.
